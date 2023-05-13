@@ -16,11 +16,11 @@ class TestimonialScreen extends StatelessWidget {
           style: titleHeader,
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20),
+      body: const Padding(
+        padding: EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Text(
               'Kesan',
               style: TextStyle(
