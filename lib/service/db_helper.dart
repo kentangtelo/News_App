@@ -64,15 +64,4 @@ class DatabaseHelper {
     );
     return result;
   }
-
-  Future<String> hashPassword(String password) async {
-    final salt = BCrypt.gensalt();
-    final hash = BCrypt.hashpw(password, salt);
-    return hash;
-  }
-
-  Future<bool> checkPassword(String password, String hash) async {
-    final result = BCrypt.checkpw(password, hash);
-    return result;
-  }
 }
